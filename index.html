@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGS Giyim | Endüstriyel Çözümler</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="AGS Giyim Logo" class="nav-logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="#about">Hakkımızda</a>
+                <a href="#services">Hizmetler</a>
+                <a href="#contact">İletişim</a>
+                <button id="theme-toggle" class="theme-btn" aria-label="Temayı Değiştir">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu Toggler -->
+            <button class="menu-toggle" aria-label="Menüyü Aç">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+        <a href="#about">Hakkımızda</a>
+        <a href="#services">Hizmetler</a>
+        <a href="#contact">İletişim</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="gradient-bg"></div>
+        <div class="hero-content fade-in-up">
+            <h1 class="hero-title">Giyim Sanayi & <br><span class="highlight">Endüstriyel Çözümler</span></h1>
+            <p class="hero-subtitle">İş güvenliği, koruma ve yüksek performans için premium düzey çözümler.</p>
+            <a href="#services" class="primary-btn">Çalışma Alanlarımız <svg xmlns="http://www.w3.org/2000/svg"
+                    width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg></a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container reveal">
+            <h2 class="section-title">Hakkımızda</h2>
+            <div class="glass-card about-card">
+                <p><strong>AGS Giyim</strong>, endüstri standartlarını yeniden belirleyen koruyucu giyim ve ileri
+                    teknoloji yağ çözümleri sunar. Fabrikaların, tesislerin ve zorlu üretim bantlarının ihtiyaç duyduğu
+                    özel kıyafetleri üretiyor, aynı zamanda otomasyon süreçlerinde robotların sorunsuz çalışması için
+                    yüksek performanslı koruyucu kılıflar sağlıyoruz.</p>
+                <p>Geleceğin endüstrisi için bugünden inovatif formüller geliştiriyoruz.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title reveal">Faaliyet Alanlarımız</h2>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <a href="is-elbiseleri.html" class="service-card reveal" style="transition-delay: 0.1s;">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M20.38 3.46L16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3>İş Elbiseleri</h3>
+                    <p>Pantolon, önlük ve mont gibi ürünler başta olmak üzere iş güvenliği standartlarına uygun kurumsal
+                        kıyafet üretimi.</p>
+                    <span class="card-link">Detayları Gör →</span>
+                    <div class="card-glow"></div>
+                </a>
+
+                <!-- Service 2 -->
+                <a href="robot-elbiseleri.html" class="service-card reveal" style="transition-delay: 0.2s;">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+                            <circle cx="12" cy="5" r="2"></circle>
+                            <path d="M12 7v4"></path>
+                            <line x1="8" y1="16" x2="8" y2="16"></line>
+                            <line x1="16" y1="16" x2="16" y2="16"></line>
+                        </svg>
+                    </div>
+                    <h3>Robot Elbiseleri</h3>
+                    <p>Endüstriyel robot kolları için boya, toz ve elektriklenmeye karşı özel koruyucu kılıf çözümleri.
+                    </p>
+                    <span class="card-link">Detayları Gör →</span>
+                    <div class="card-glow"></div>
+                </a>
+
+                <!-- Service 3 -->
+                <a href="endustriyel-yaglar.html" class="service-card reveal" style="transition-delay: 0.3s;">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                        </svg>
+                    </div>
+                    <h3>Endüstriyel Yağlar</h3>
+                    <p>Farklı sıcaklık ve basınç şartlarına dayanıklı, farklı kullanım amaçlarına uygun sentetik yağ
+                        tedariği.</p>
+                    <span class="card-link">Detayları Gör →</span>
+                    <div class="card-glow"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container reveal">
+            <div class="contact-box glass-card">
+                <div class="contact-info">
+                    <h2>İletişim</h2>
+                    <p>Sorularınız veya teklif almak için bizimle iletişime geçin.</p>
+
+                    <div class="info-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <div>
+                            <strong>Adres</strong>
+                            <p>Bağlarbaşı Mahallesi<br>2. Nilüfer Cadde - No: 25<br>Osmangazi / Bursa</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        <div>
+                            <strong>Telefon</strong>
+                            <p><a href="tel:+905327657677">+90 (532) 765 76 77</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <div>
+                            <strong>E-posta</strong>
+                            <p><a href="mailto:agsgiyim.fatihaltun@hotmail.com">agsgiyim.fatihaltun@hotmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <a href="https://maps.app.goo.gl/hwNop73rL1oWNhN96" target="_blank" class="map-link">
+                        <div class="map-overlay">
+                            <span>Google Haritalarda Aç <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"></polyline>
+                                </svg></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <img src="assets/logo.png" alt="AGS Giyim Logo" class="footer-logo-img">
+            <p>&copy; <span id="year"></span> AGS Giyim Sanayi & Endüstriyel Çözümler. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
