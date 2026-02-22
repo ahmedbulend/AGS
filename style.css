@@ -221,10 +221,10 @@ a {
 
 .mobile-nav {
     position: fixed;
-    top: 0;
+    top: 70px;
     right: -100%;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 70px);
     background: var(--bg-color);
     display: flex;
     flex-direction: column;
@@ -233,6 +233,51 @@ a {
     gap: 2rem;
     z-index: 999;
     transition: var(--transition);
+}
+
+.mobile-nav.active {
+    right: 0;
+}
+
+.mobile-theme-switch {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: 12px 24px;
+    border-radius: 30px;
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+}
+
+[data-theme="light"] .mobile-theme-switch {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.theme-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sun-icon-m,
+.moon-icon-m {
+    transition: var(--transition);
+}
+
+[data-theme="dark"] .sun-icon-m {
+    display: none;
+}
+
+[data-theme="light"] .moon-icon-m {
+    display: none;
 }
 
 .mobile-nav.active {
@@ -523,10 +568,11 @@ a {
     align-items: center;
     justify-content: center;
     transition: var(--transition);
+    opacity: 0;
 }
 
-.map-overlay span {
-    background: var(--bg-color);
+.map-button {
+    background: var(--primary-color);
     padding: 1rem 2rem;
     border-radius: 50px;
     font-weight: 600;
@@ -541,9 +587,10 @@ a {
 
 .map-link:hover .map-overlay {
     background: rgba(0, 0, 0, 0.6);
+    opacity: 1;
 }
 
-.map-link:hover .map-overlay span {
+.map-link:hover .map-button {
     transform: translateY(0);
     opacity: 1;
 }
@@ -711,6 +758,29 @@ footer {
     .content-image {
         order: -1;
     }
+
+    .map-container {
+        min-height: 350px;
+    }
+
+    .map-overlay {
+        opacity: 1;
+        /* Always visible on mobile */
+        background: rgba(0, 0, 0, 0.2) !important;
+        /* Lighter background so map is still visible */
+        align-items: flex-end;
+        /* Push button to bottom */
+        padding-bottom: 2rem;
+    }
+
+    .map-button {
+        transform: translateY(0);
+        /* Always at steady position on mobile */
+        opacity: 1;
+        background: rgba(10, 15, 25, 0.9);
+        /* Dark button for high contrast on map */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    }
 }
 
 @media (max-width: 768px) {
@@ -736,5 +806,26 @@ footer {
 
     .glass-card {
         padding: 2rem;
+    }
+
+    .primary-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 0.9rem 2rem;
+        font-size: 1rem;
+    }
+
+    .contact-info {
+        padding: 2rem;
+        gap: 1.5rem;
+    }
+
+    .contact-info h2 {
+        font-size: 2rem;
+    }
+
+    .info-item {
+        flex-direction: column;
+        gap: 0.5rem;
     }
 }
