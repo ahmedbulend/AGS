@@ -11,13 +11,22 @@ document.addEventListener('DOMContentLoaded', () => {
         htmlEl.setAttribute('data-theme', 'light');
     }
 
+    /* Common Theme Toggler Logic */
+    const toggleTheme = () => {
+        const currentTheme = htmlEl.getAttribute('data-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        htmlEl.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+    };
+
     if (themeBtn) {
-        themeBtn.addEventListener('click', () => {
-            const currentTheme = htmlEl.getAttribute('data-theme');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            htmlEl.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-        });
+        themeBtn.addEventListener('click', toggleTheme);
+    }
+
+    // Also bind to mobile toggle if exists
+    const mobileThemeBtn = document.getElementById('mobile-theme-toggle');
+    if (mobileThemeBtn) {
+        mobileThemeBtn.addEventListener('click', toggleTheme);
     }
 
     // 2. Navbar Scroll Effect
