@@ -233,6 +233,8 @@ a {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    padding-bottom: 70px;
+    /* Offset the top 70px to center items on true screen height */
     z-index: 999;
     transition: var(--transition);
 }
