@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
-      <loc>https://ahmedbulend.github.io/ags-giyim/index.html</loc>
+      <loc>https://agsgiyim.com.tr/index.html</loc>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
-      <loc>https://ahmedbulend.github.io/ags-giyim/is-elbiseleri.html</loc>
+      <loc>https://agsgiyim.com.tr/is-elbiseleri.html</loc>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://ahmedbulend.github.io/ags-giyim/robot-elbiseleri.html</loc>
+      <loc>https://agsgiyim.com.tr/robot-elbiseleri.html</loc>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://ahmedbulend.github.io/ags-giyim/endustriyel-yaglar.html</loc>
+      <loc>https://agsgiyim.com.tr/endustriyel-yaglar.html</loc>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ahmedbulend.github.io/ags-giyim/sitemap.xml
+Sitemap: https://agsgiyim.com.tr/sitemap.xml
