@@ -29,14 +29,3 @@ Tasarımda, hiçbir ağır framework veya kütüphane kullanılmadan doğrudan *
 - **Fully Responsive:** Akıllı telefonlardan, tabletlere ve geniş ekranlı masaüstü monitörlere kadar tüm cihazlarda kusursuz çalışacak mobil uyumlu mimari oluşturulmuştur.
 - **Custom Fonts:** Temiz ve okunabilir bir tipografi için Google Fonts altyapısından `Inter` ve `Outfit` kullanılmıştır.
 
-## Lisans ve İletişim
-
-**AGS Giyim Sanayi & Endüstriyel Çözümler**
-
-Bağlarbaşı Mahallesi\
-2. Nilüfer Cadde - No: 25\
-Osmangazi / Bursa
-
-- Telefon: +90 (532) 765 76 77
-- E-posta: agsgiyim.fatihaltun@hotmail.com
-
